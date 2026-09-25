@@ -1,0 +1,14 @@
+.dart_tool/
+.packages
+.pub/
+build/
+pubspec.lock
+.idea/
+*.iml
+.DS_Store
+example/.dart_tool/
+example/build/
+android/.gradle/
+android/local.properties
+ios/Flutter/
+*.xcworkspace

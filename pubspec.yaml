@@ -1,0 +1,30 @@
+name: good_sleep_test
+description: Classic Good Sleep Test BLE session (Contec CMS50S SpO2) with dual spo2+wave CSV recording. Flutter plugin embedding native Contec SDK for FlutterFlow.
+version: 0.1.0
+homepage: https://github.com/VirtuousTechlogicMobile/good_sleep_test
+repository: https://github.com/VirtuousTechlogicMobile/good_sleep_test
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.1.4
+  permission_handler: ^12.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.goodslee.pco.good_sleep_test
+        pluginClass: GoodSleepTestPlugin
+      ios:
+        pluginClass: GoodSleepTestPlugin
