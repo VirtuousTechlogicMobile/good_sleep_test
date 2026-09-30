@@ -3,7 +3,7 @@ description: Classic Good Sleep Test BLE session (Contec CMS50S SpO2) with dual 
 version: 0.1.0
 homepage: https://github.com/VirtuousTechlogicMobile/good_sleep_test
 repository: https://github.com/VirtuousTechlogicMobile/good_sleep_test
-publish_to: none
+issue_tracker: https://github.com/VirtuousTechlogicMobile/good_sleep_test/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

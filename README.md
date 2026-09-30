@@ -5,16 +5,32 @@ Classic **Good Sleep Test** BLE session for Contec CMS50S / `SpO2*` pulse oximet
 This is a **Flutter plugin** (Android + iOS) that embeds the Contec SDK so FlutterFlow
 projects can use overnight spo2+wave recording **without editing native host files**.
 
-## Install (GitHub — same as snore_detection)
+## Install
+
+### pub.dev
+
+```yaml
+dependencies:
+  good_sleep_test: ^0.1.0
+```
+
+### GitHub (FlutterFlow Custom Package)
 
 ```yaml
 dependencies:
   good_sleep_test:
     git:
       url: https://github.com/VirtuousTechlogicMobile/good_sleep_test.git
+      ref: v0.1.0
 ```
 
-FlutterFlow: **Settings → Dependencies → Custom Package** → git URL above.
+### Local path (development)
+
+```yaml
+dependencies:
+  good_sleep_test:
+    path: ../good_sleep_test
+```
 
 ## Quick start
 
@@ -42,4 +58,7 @@ Event formats (native → Dart): `spo2Data,{spo2},{pr}` and `waveData,{wave}`.
 
 ## License
 
-Proprietary — VirtuousTechlogic / Good Sleep Co. Not published to pub.dev.
+MIT for package source code — see [LICENSE](LICENSE).
+
+Contec CMS50S SDK binaries bundled under `android/libs` and `ios/Frameworks`
+remain subject to Contec / manufacturer terms.
